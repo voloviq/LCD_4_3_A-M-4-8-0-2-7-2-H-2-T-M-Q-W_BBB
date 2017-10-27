@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KR_102_6A_AC_230V
+D AC 230V Connector - KR-102-6A
+K Connector
+F Symbols/Components_Documentation/Kr-102-6a.pdf
+$ENDCMP
+#
+$CMP LOGO
+D Volovique Logo
+K Logo
+$ENDCMP
+#
+$CMP PCB_DISTANCE_V1
+D PCB Distance with 24mm and fi = 2.8mm
+K Distance PCB
+F Symbols/Components_Documentation/PCB_Distance_Ver_1.pdf
+$ENDCMP
+#
+#End Doc Library

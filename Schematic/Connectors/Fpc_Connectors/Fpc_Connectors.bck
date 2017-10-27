@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 40pin_fpc_0_5mm
+D FPC 40 pins 0.5mm raster
+K FPC_Connector
+F Connectors/Fpc_Connectors/Components_Documentation/HTB1E.pdf
+$ENDCMP
+#
+$CMP 40pin_fpc_top_0_5mm
+D FPC 40 pins 0.5mm raster
+K FPC_Connector
+F Connectors/Fpc_Connectors/Components_Documentation/HTB1E.pdf
+$ENDCMP
+#
+$CMP 4pin_Cvilux_1_0mm
+D 4 Pin FPC/FFC Cvilux 1.0mm connector
+K FPC_Connector
+F Connectors/Fpc_Connectors/Components_Documentation/ZIFFZC2xxCV.pdf.pdf
+$ENDCMP
+#
+$CMP 4pin_Joint_Tech_0_5mm
+D 4 Pin FPC/FFC Joint Tech 0.5mm connector
+K FPC_Connector
+F Connectors/Fpc_Connectors/Components_Documentation/F0500WR-S-XPT.pdf
+$ENDCMP
+#
+$CMP BM15FR0_8-22DS-0_35V
+D 0_35 pitch, 0_7 0_8mm mated height, high retention Strength Connectors PCB-to-PCB and PCB-to-FPC Connectors
+K Pcb-to-Pcb
+F Connectors/Fpc_Connectors/Components_Documentation/BM15FR_catalog.pdf
+$ENDCMP
+#
+#End Doc Library

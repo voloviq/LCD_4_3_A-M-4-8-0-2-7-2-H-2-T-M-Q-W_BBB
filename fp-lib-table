@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name Capacitors_Smd_0805)(type KiCad)(uri "$(KISYSMOD)/Capacitors/Smd_0805/Capacitors_Smd_0805.pretty")(options "")(descr ""))
+  (lib (name Smd_Tantal)(type KiCad)(uri "$(KISYSMOD)/Capacitors/Smd_Tantal/Smd_Tantal.pretty")(options "")(descr ""))
+  (lib (name Switching)(type KiCad)(uri "$(KISYSMOD)/Dc_Dc_Regulators/Switching/Switching.pretty")(options "")(descr ""))
+  (lib (name Diodes)(type KiCad)(uri "$(KISYSMOD)/Diodes/Diodes.pretty")(options "")(descr ""))
+  (lib (name Inductors)(type KiCad)(uri "$(KISYSMOD)/Inductors/Inductors.pretty")(options "")(descr ""))
+  (lib (name Resistor_Smd_0805)(type KiCad)(uri "$(KISYSMOD)/Resistors/Smd_0805/Resistor_Smd_0805.pretty")(options "")(descr ""))
+  (lib (name Fpc_Connectors)(type KiCad)(uri "$(KISYSMOD)/Connectors/Fpc_Connectors/Fpc_Connectors.pretty")(options "")(descr ""))
+  (lib (name Resistor_Smd_0603)(type KiCad)(uri "$(KISYSMOD)/Resistors/Smd_0603/Resistor_Smd_0603.pretty")(options "")(descr ""))
+)

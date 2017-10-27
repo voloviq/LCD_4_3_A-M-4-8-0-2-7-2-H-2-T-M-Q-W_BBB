@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10uH_CM322522
+D Inductor: Ferrite; 10uH; 150mA; 2,1Ω; SMD; 2,52MHz; Q:30 1210
+K Inductor
+F Inductors/Components_Documentation/BOURNS_cm322522.pdf
+$ENDCMP
+#
+$CMP 10uH_NEW
+D Inductor: Ferrite; 10uH; 150mA; 2,1Ω; SMD; 2,52MHz; Q:30 1210
+K Inductor
+F Inductors/Components_Documentation/BOURNS_cm322522.pdf
+$ENDCMP
+#
+$CMP 15uH_1_33A_DE0703
+D 15uH 1.33A Power Coil
+K SMD Power Coil
+F Inductors/Components_Documentation/Ferrocore_De0703_SMD_Power_Coils.pdf
+$ENDCMP
+#
+$CMP DER0705-15uH
+D 15uH 1.33A Power Coil
+K SMD Power Coil
+F Inductors/Components_Documentation/FerroCore_SMD_Power_Coil.pdf
+$ENDCMP
+#
+$CMP DL0603-10
+D Inductor: Ferrite; 10uH; 3mA; 1,85Ω; SMD; 0603
+K Inductor
+F Inductors/Components_Documentation/FerroCore_DL0603-10.pdf
+$ENDCMP
+#
+#End Doc Library
