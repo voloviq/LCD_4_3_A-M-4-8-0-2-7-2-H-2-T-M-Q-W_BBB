@@ -4,15 +4,12 @@ LIBS:Capacitors_Smd_Tantal
 LIBS:Fpc_Connectors
 LIBS:Switching_Regulators
 LIBS:Diodes
-LIBS:Goldpin_2_54mm
 LIBS:Inductors
 LIBS:power
 LIBS:Resistors_Smd0603
 LIBS:Resistors_Smd0805
-LIBS:I2C_Expanders
-LIBS:Microswitches
-LIBS:Resistors_Smd1206
 LIBS:Symbols
+LIBS:Touch_Sensors
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END

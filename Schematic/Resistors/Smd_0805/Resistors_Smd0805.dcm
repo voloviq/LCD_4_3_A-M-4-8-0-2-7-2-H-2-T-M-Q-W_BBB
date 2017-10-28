@@ -60,6 +60,12 @@ K SMD Resistor
 F Resistors/Smd_0805/Components_Documentation/Vishay_Resistors_SM0805.pdf
 $ENDCMP
 #
+$CMP 240K_0805
+D SMD Resistor 240kOhm 0.25W
+K SMD Resistor
+F Resistors/Smd_0805/Components_Documentation/Vishay_Resistors_SM0805.pdf
+$ENDCMP
+#
 $CMP 2K2_0805
 D SMD Resistor 2k2Ohm 0.25W
 K SMD Resistor

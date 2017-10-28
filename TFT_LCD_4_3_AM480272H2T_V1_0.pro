@@ -1,4 +1,4 @@
-update=sob, 28 paź 2017, 00:22:43
+update=sob, 28 paź 2017, 14:28:15
 version=1
 last_client=kicad
 [pcbnew]
@@ -49,3 +49,4 @@ LibName7=Schematic/Power_Signs/power
 LibName8=Schematic/Resistors/Smd_0603/Resistors_Smd0603
 LibName9=Schematic/Resistors/Smd_0805/Resistors_Smd0805
 LibName10=Schematic/Symbols/Symbols
+LibName11=Schematic/Touch_Sensors/Touch_Sensors

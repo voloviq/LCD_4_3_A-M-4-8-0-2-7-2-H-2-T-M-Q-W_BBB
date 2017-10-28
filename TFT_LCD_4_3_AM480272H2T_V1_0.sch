@@ -4,15 +4,12 @@ LIBS:Capacitors_Smd_Tantal
 LIBS:Fpc_Connectors
 LIBS:Switching_Regulators
 LIBS:Diodes
-LIBS:Goldpin_2_54mm
 LIBS:Inductors
 LIBS:power
 LIBS:Resistors_Smd0603
 LIBS:Resistors_Smd0805
-LIBS:I2C_Expanders
-LIBS:Microswitches
-LIBS:Resistors_Smd1206
 LIBS:Symbols
+LIBS:Touch_Sensors
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END
@@ -77,12 +74,10 @@ Text GLabel 7850 2950 0    50   Output ~ 0
 LCD_HSYNC
 Text GLabel 7800 2650 0    50   Output ~ 0
 LCD_DCLK
-Text GLabel 7850 950  0    50   Output ~ 0
-LCD_RESET
-Text GLabel 7750 1750 0    50   Output ~ 0
-LCD_CS
-Text GLabel 7750 2050 0    50   Output ~ 0
-LCD_SCL
+Text GLabel 7700 1750 0    39   Output ~ 0
+TSC_~CS
+Text GLabel 7800 2050 0    50   Output ~ 0
+TSC_DCLK
 Text GLabel 7950 3950 0    50   Output ~ 0
 LCD_DB16_R0
 Text GLabel 7950 3850 0    50   Output ~ 0
@@ -142,24 +137,12 @@ F 3 "" H 8050 5950 60  0000 C CNN
 	1    8050 5950
 	0    1    1    0   
 $EndComp
-Text GLabel 7750 1650 0    50   Output ~ 0
-TSC_SCL
-Text GLabel 7800 1550 0    50   BiDi ~ 0
-TSC_SDA
 Text GLabel 7750 4050 0    39   Output ~ 0
-TSC_~WAKE
+TSC_BUSY
 Text GLabel 7700 4150 0    39   Input ~ 0
 TSC_~INT
-Text GLabel 7700 850  0    39   Output ~ 0
-TSC_~RST
-Text GLabel 7800 5050 0    50   Input ~ 0
-BTN_SW1
-Text GLabel 7800 5150 0    50   Input ~ 0
-BTN_SW2
-Text GLabel 7800 6050 0    50   Input ~ 0
-BTN_SW3
-Text GLabel 7750 1950 0    50   Output ~ 0
-LCD_SDI
+Text GLabel 7700 1950 0    50   Output ~ 0
+TSC_DI
 Entry Bus Bus
 	7250 4650 7350 4750
 Entry Bus Bus
@@ -291,7 +274,7 @@ Entry Bus Bus
 Entry Bus Bus
 	3200 5150 3300 5050
 Entry Bus Bus
-	3200 1100 3300 1000
+	3200 1200 3300 1100
 Entry Bus Bus
 	3200 1300 3300 1200
 Entry Bus Bus
@@ -399,15 +382,15 @@ Text HLabel 3100 1900 0    50   Output ~ 0
 Text HLabel 3100 2000 0    50   Output ~ 0
 GND
 Text HLabel 3100 1300 0    50   Output ~ 0
-TSC_SCL
-Text HLabel 3100 1500 0    50   Output ~ 0
-TSC_~RST
+TSC_DCLK
+Text HLabel 3100 1500 0    50   Input ~ 0
+TSC_DOUT
 Text HLabel 3100 1600 0    50   Output ~ 0
-TSC_~WAKE
-Text HLabel 3100 1100 0    50   Input ~ 0
+TSC_~CS
+Text HLabel 3100 1200 0    50   Input ~ 0
 TSC_~INT
-Text HLabel 3100 1400 0    50   BiDi ~ 0
-TSC_SDA
+Text HLabel 3100 1400 0    50   Output ~ 0
+TSC_DI
 $Comp
 L GND #PWR02
 U 1 1 59E72514
@@ -539,16 +522,16 @@ Entry Bus Bus
 	7250 2950 7350 3050
 Entry Bus Bus
 	7250 2850 7350 2950
-Text GLabel 8000 2450 0    50   Output ~ 0
+Text GLabel 8000 2450 0    50   Input ~ 0
 TSC_RES_ADC0
-Text GLabel 8000 2350 0    50   Output ~ 0
+Text GLabel 8000 2350 0    50   Input ~ 0
 TSC_RES_ADC1
-Text GLabel 8000 2250 0    50   Output ~ 0
+Text GLabel 8000 2250 0    50   Input ~ 0
 TSC_RES_ADC2
-Text GLabel 8000 2150 0    50   Output ~ 0
+Text GLabel 8000 2150 0    50   Input ~ 0
 TSC_RES_ADC3
-Text GLabel 7800 1850 0    50   Input ~ 0
-LCD_SDO
+Text GLabel 7750 1850 0    39   Input ~ 0
+TSC_DOUT
 Text HLabel 5200 4350 0    50   Output ~ 0
 LCD_SDO
 Entry Bus Bus
@@ -566,14 +549,6 @@ LCD_PWM
 Entry Bus Bus
 	7250 6050 7350 6150
 Entry Bus Bus
-	7250 5950 7350 6050
-Entry Bus Bus
-	7250 5050 7350 5150
-Entry Bus Bus
-	7250 4950 7350 5050
-Entry Bus Bus
-	7250 1450 7350 1550
-Entry Bus Bus
 	7250 2350 7350 2450
 Entry Bus Bus
 	7250 2250 7350 2350
@@ -589,8 +564,6 @@ Entry Bus Bus
 	7250 1750 7350 1850
 Entry Bus Bus
 	7250 1650 7350 1750
-Entry Bus Bus
-	7250 1550 7350 1650
 Text GLabel 7800 3050 0    50   Output ~ 0
 LCD_DISP
 Text GLabel 7850 2850 0    50   Output ~ 0
@@ -599,14 +572,10 @@ Entry Bus Bus
 	7250 4050 7350 4150
 Entry Bus Bus
 	7250 3950 7350 4050
-Entry Bus Bus
-	7250 750  7350 850 
-Entry Bus Bus
-	7250 850  7350 950 
 NoConn ~ 9250 1050
 NoConn ~ 9250 1150
 Wire Bus Line
-	7250 1350 7250 6050
+	7250 600  7250 6050
 Wire Bus Line
 	5350 1350 5350 5850
 Wire Bus Line
@@ -686,8 +655,6 @@ Wire Bus Line
 Wire Bus Line
 	3200 5150 3150 5150
 Wire Bus Line
-	3200 1100 3100 1100
-Wire Bus Line
 	3200 1300 3100 1300
 Wire Bus Line
 	3200 1400 3100 1400
@@ -699,8 +666,6 @@ Wire Bus Line
 	3200 1900 3100 1900
 Wire Bus Line
 	3200 2000 3100 2000
-Wire Bus Line
-	7250 750  3300 750 
 Wire Bus Line
 	5250 5000 5200 5000
 Wire Bus Line
@@ -826,25 +791,17 @@ Wire Wire Line
 Wire Wire Line
 	8000 2150 9250 2150
 Wire Wire Line
-	9250 1650 7750 1650
+	9250 2050 7800 2050
 Wire Wire Line
-	9250 1550 7800 1550
+	9250 1950 7700 1950
 Wire Wire Line
-	9250 2050 7750 2050
-Wire Wire Line
-	9250 1950 7750 1950
-Wire Wire Line
-	9250 1750 7750 1750
-Wire Wire Line
-	9250 950  7850 950 
-Wire Wire Line
-	9250 850  7700 850 
+	9250 1750 7700 1750
 Wire Wire Line
 	8150 3850 9250 3850
 Wire Wire Line
 	8250 3950 9250 3950
 Wire Wire Line
-	7800 1850 9250 1850
+	7750 1850 9250 1850
 Wire Bus Line
 	5250 4350 5200 4350
 Wire Bus Line
@@ -896,14 +853,6 @@ Wire Wire Line
 Wire Wire Line
 	8850 4650 9250 4650
 Wire Wire Line
-	8150 4850 8150 5050
-Wire Wire Line
-	8150 5050 7800 5050
-Wire Wire Line
-	7800 5150 8250 5150
-Wire Wire Line
-	8250 5150 8250 4950
-Wire Wire Line
 	9250 5050 8350 5050
 Wire Wire Line
 	8350 5050 8350 5250
@@ -940,12 +889,6 @@ Wire Wire Line
 Wire Wire Line
 	8850 5550 9250 5550
 Wire Wire Line
-	9250 5650 8950 5650
-Wire Wire Line
-	8950 5650 8950 6050
-Wire Wire Line
-	8950 6050 7800 6050
-Wire Wire Line
 	9250 5750 9050 5750
 Wire Wire Line
 	9050 5750 9050 6150
@@ -953,12 +896,6 @@ Wire Wire Line
 	9050 6150 7800 6150
 Wire Bus Line
 	7350 6150 7405 6150
-Wire Bus Line
-	7350 6050 7415 6050
-Wire Bus Line
-	7350 5150 7415 5150
-Wire Bus Line
-	7350 5050 7415 5050
 Wire Bus Line
 	7350 2450 7405 2450
 Wire Bus Line
@@ -972,14 +909,6 @@ Wire Bus Line
 Wire Bus Line
 	7350 1950 7400 1950
 Wire Bus Line
-	7350 1850 7420 1850
-Wire Bus Line
-	7350 1750 7420 1750
-Wire Bus Line
-	7350 1650 7385 1650
-Wire Bus Line
-	7350 1550 7410 1550
-Wire Bus Line
 	7350 3050 7400 3050
 Wire Bus Line
 	7350 2950 7375 2950
@@ -991,26 +920,53 @@ Wire Bus Line
 	7350 4150 7430 4150
 Wire Bus Line
 	7250 1350 5350 1350
-Wire Bus Line
-	7250 750  7250 850 
-Wire Bus Line
-	7350 850  7415 850 
-Wire Bus Line
-	7350 950  7395 950 
-Wire Wire Line
-	9250 4750 8950 4750
-Wire Wire Line
-	8950 4750 8950 4850
-Wire Wire Line
-	8950 4850 8150 4850
-Wire Wire Line
-	8250 4950 9050 4950
-Wire Wire Line
-	9050 4950 9050 4850
-Wire Wire Line
-	9050 4850 9250 4850
 Wire Wire Line
 	9250 4950 9150 4950
 Wire Bus Line
-	3300 750  3300 1900
+	3300 600  3300 1900
+Text HLabel 3100 1700 0    50   Input ~ 0
+TSC_BUSY
+Entry Bus Bus
+	3200 1700 3300 1600
+Wire Bus Line
+	3200 1700 3100 1700
+Wire Bus Line
+	7350 1750 7440 1750
+Wire Bus Line
+	7350 1850 7415 1850
+NoConn ~ 9250 1550
+NoConn ~ 9250 1650
+NoConn ~ 9250 950 
+Wire Bus Line
+	3200 1200 3100 1200
+Text HLabel 3100 1100 0    50   Input ~ 0
+TSC_RES_ADC0
+Text HLabel 3100 1000 0    50   Input ~ 0
+TSC_RES_ADC0
+Text HLabel 3100 900  0    50   Input ~ 0
+TSC_RES_ADC0
+Text HLabel 3100 800  0    50   Input ~ 0
+TSC_RES_ADC0
+Entry Bus Bus
+	3200 1000 3300 900 
+Entry Bus Bus
+	3200 1100 3300 1000
+Wire Bus Line
+	3200 1000 3100 1000
+Wire Bus Line
+	3200 1100 3100 1100
+Entry Bus Bus
+	3200 800  3300 700 
+Entry Bus Bus
+	3200 900  3300 800 
+Wire Bus Line
+	3200 800  3100 800 
+Wire Bus Line
+	3200 900  3100 900 
+NoConn ~ 9250 5650
+NoConn ~ 9250 4850
+NoConn ~ 9250 4750
+NoConn ~ 9250 850 
+Wire Bus Line
+	3300 600  7250 600 
 $EndSCHEMATC

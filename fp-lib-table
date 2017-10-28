@@ -7,4 +7,5 @@
   (lib (name Resistor_Smd_0805)(type KiCad)(uri "$(KISYSMOD)/Resistors/Smd_0805/Resistor_Smd_0805.pretty")(options "")(descr ""))
   (lib (name Fpc_Connectors)(type KiCad)(uri "$(KISYSMOD)/Connectors/Fpc_Connectors/Fpc_Connectors.pretty")(options "")(descr ""))
   (lib (name Resistor_Smd_0603)(type KiCad)(uri "$(KISYSMOD)/Resistors/Smd_0603/Resistor_Smd_0603.pretty")(options "")(descr ""))
+  (lib (name Touch_Sensors)(type KiCad)(uri "$(KIPRJMOD)/Pcb/Touch_Sensors/Touch_Sensors.pretty")(options "")(descr ""))
 )

@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT42QT1010
+D AT42QT1010 One Channel Touch Sensor
+K Touch Sensor
+F Touch_Sensors/Components_Documentation/At42QT1010.pdf
+$ENDCMP
+#
+$CMP XPT2046
+D XPT2046 Resistive Touch Screen Controller
+K Touch Sensor
+F Touch_Sensors/Components_Documentation/XPT2046.pdf
+$ENDCMP
+#
+#End Doc Library
