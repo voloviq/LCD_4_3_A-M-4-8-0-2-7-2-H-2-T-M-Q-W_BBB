@@ -1,6 +1,7 @@
-(module 50pins_0_5pitch (layer F.Cu) (tedit 578A1F1C)
+(module 50pins_0_5pitch (layer F.Cu) (tedit 59F8A3C4)
   (descr 50pins_0_5pitch)
   (tags "Fpc Connector")
+  (attr smd)
   (fp_text reference 50pins_05pitch (at 0 -3.4) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

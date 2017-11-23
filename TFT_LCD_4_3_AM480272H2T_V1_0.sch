@@ -1,15 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:Capacitors_Smd0805
-LIBS:Capacitors_Smd_Tantal
-LIBS:Fpc_Connectors
-LIBS:Switching_Regulators
-LIBS:Diodes
-LIBS:Inductors
-LIBS:power
-LIBS:Resistors_Smd0603
-LIBS:Resistors_Smd0805
-LIBS:Symbols
-LIBS:Touch_Sensors
+EESchema Schematic File Version 4
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END
@@ -38,7 +27,7 @@ F0 "Touchscreen" 60
 F1 "Touchscreen.sch" 60
 $EndSheet
 $Comp
-L GND #PWR01
+L power1:GND #PWR01
 U 1 1 57E98D5F
 P 9150 4950
 F 0 "#PWR01" H 9150 5050 30  0001 C CNN
@@ -49,7 +38,7 @@ F 3 "" H 9150 4950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 3V3 #PWR03
+L power1:3V3 #PWR03
 U 1 1 57E98DA1
 P 8950 1350
 F 0 "#PWR03" H 8950 1450 40  0001 C CNN
@@ -60,7 +49,7 @@ F 3 "" H 8950 1350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 3V3 #PWR04
+L power1:3V3 #PWR04
 U 1 1 57E98DD3
 P 8950 1250
 F 0 "#PWR04" H 8950 1350 40  0001 C CNN
@@ -127,7 +116,7 @@ LCD_DB14_G6
 Text GLabel 7950 4250 0    50   Output ~ 0
 LCD_DB15_G7
 $Comp
-L GND #PWR06
+L power1:GND #PWR06
 U 1 1 57E99A4F
 P 8050 5950
 F 0 "#PWR06" H 8050 6050 30  0001 C CNN
@@ -335,20 +324,6 @@ Text HLabel 5200 4150 0    50   Output ~ 0
 LCD_DB22_R6
 Text HLabel 5200 4250 0    50   Output ~ 0
 LCD_DB23_R7
-Text HLabel 5200 4450 0    50   Output ~ 0
-LCD_SDI
-Text HLabel 5200 4550 0    50   Output ~ 0
-LCD_SCL
-Text HLabel 5200 4650 0    50   Output ~ 0
-LCD_CS
-Text HLabel 5200 4750 0    50   Output ~ 0
-LCD_RESET
-$Sheet
-S 4150 1600 1050 4550
-U 578A9842
-F0 "LCD" 60
-F1 "LCD.sch" 60
-$EndSheet
 Text HLabel 5200 5000 0    50   Output ~ 0
 LCD_DCLK
 Text HLabel 5200 5100 0    50   Output ~ 0
@@ -392,7 +367,7 @@ TSC_~INT
 Text HLabel 3100 1400 0    50   Output ~ 0
 TSC_DI
 $Comp
-L GND #PWR02
+L power1:GND #PWR02
 U 1 1 59E72514
 P 8050 5850
 F 0 "#PWR02" H 8050 5950 30  0001 C CNN
@@ -403,7 +378,7 @@ F 3 "" H 8050 5850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR05
+L power1:GND #PWR05
 U 1 1 59E728D4
 P 8050 3950
 F 0 "#PWR05" H 8050 4050 30  0001 C CNN
@@ -414,7 +389,7 @@ F 3 "" H 8050 3950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR07
+L power1:GND #PWR07
 U 1 1 59E728DA
 P 8050 3850
 F 0 "#PWR07" H 8050 3950 30  0001 C CNN
@@ -425,7 +400,7 @@ F 3 "" H 8050 3850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR055
+L power1:GND #PWR055
 U 1 1 59E72AD4
 P 8050 4950
 F 0 "#PWR055" H 8050 5050 30  0001 C CNN
@@ -436,7 +411,7 @@ F 3 "" H 8050 4950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR056
+L power1:GND #PWR056
 U 1 1 59E72ADA
 P 8050 4850
 F 0 "#PWR056" H 8050 4950 30  0001 C CNN
@@ -447,7 +422,7 @@ F 3 "" H 8050 4850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 50pin_HRS_FH28_Series_0_5mm P1
+L Fpc_Connectors:50pin_HRS_FH28_Series_0_5mm P1
 U 1 1 59E741FC
 P 9500 3250
 F 0 "P1" H 9727 3248 60  0000 L CNN
@@ -458,7 +433,7 @@ F 3 "" H 9600 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR057
+L power1:GND #PWR057
 U 1 1 59E7582B
 P 8950 4050
 F 0 "#PWR057" H 8950 4150 30  0001 C CNN
@@ -469,7 +444,7 @@ F 3 "" H 8950 4050 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR058
+L power1:GND #PWR058
 U 1 1 59E75840
 P 8950 3150
 F 0 "#PWR058" H 8950 3250 30  0001 C CNN
@@ -480,7 +455,7 @@ F 3 "" H 8950 3150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR059
+L power1:GND #PWR059
 U 1 1 59E75858
 P 8950 2750
 F 0 "#PWR059" H 8950 2850 30  0001 C CNN
@@ -491,7 +466,7 @@ F 3 "" H 8950 2750 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR060
+L power1:GND #PWR060
 U 1 1 59E7586D
 P 8950 2550
 F 0 "#PWR060" H 8950 2650 30  0001 C CNN
@@ -502,7 +477,7 @@ F 3 "" H 8950 2550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR061
+L power1:GND #PWR061
 U 1 1 59E75882
 P 8950 1450
 F 0 "#PWR061" H 8950 1550 30  0001 C CNN
@@ -532,8 +507,6 @@ Text GLabel 8000 2150 0    50   Input ~ 0
 TSC_RES_ADC3
 Text GLabel 7750 1850 0    39   Input ~ 0
 TSC_DOUT
-Text HLabel 5200 4350 0    50   Output ~ 0
-LCD_SDO
 Entry Bus Bus
 	5250 4350 5350 4250
 Text HLabel 3150 5800 0    50   Output ~ 0
@@ -969,4 +942,10 @@ NoConn ~ 9250 4750
 NoConn ~ 9250 850 
 Wire Bus Line
 	3300 600  7250 600 
+$Sheet
+S 4150 1600 1050 4550
+U 578A9842
+F0 "LCD" 60
+F1 "LCD.sch" 60
+$EndSheet
 $EndSCHEMATC

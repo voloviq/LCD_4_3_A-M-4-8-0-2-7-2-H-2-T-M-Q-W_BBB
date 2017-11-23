@@ -1,6 +1,7 @@
-(module 10pin_MOLEX_527451097_0_5mm (layer F.Cu) (tedit 57EEB73B)
+(module 10pin_MOLEX_527451097_0_5mm (layer F.Cu) (tedit 59F8A378)
   (descr 10pin_MOLEX_527451097_0_5mm)
   (tags "Fpc Connector")
+  (attr smd)
   (fp_text reference MOLEX_527451097 (at 0 -4.2) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

@@ -1,15 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:Capacitors_Smd0805
-LIBS:Capacitors_Smd_Tantal
-LIBS:Fpc_Connectors
-LIBS:Switching_Regulators
-LIBS:Diodes
-LIBS:Inductors
-LIBS:power
-LIBS:Resistors_Smd0603
-LIBS:Resistors_Smd0805
-LIBS:Symbols
-LIBS:Touch_Sensors
+EESchema Schematic File Version 4
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END
@@ -26,7 +15,7 @@ Comment3 "24-bit RGB (480(RGB)x272)"
 Comment4 "4.3\" IPS type TFT/Normally back"
 $EndDescr
 $Comp
-L GND #PWR047
+L power1:GND #PWR047
 U 1 1 578B809F
 P 1500 4950
 F 0 "#PWR047" H 1500 5050 30  0001 C CNN
@@ -93,7 +82,7 @@ LCD_HSYNC
 Text GLabel 1600 5350 0    39   Input ~ 0
 LCD_VSYNC
 $Comp
-L GND #PWR049
+L power1:GND #PWR049
 U 1 1 578B83EB
 P 6050 2250
 F 0 "#PWR049" H 6050 2350 30  0001 C CNN
@@ -104,7 +93,7 @@ F 3 "" H 6050 2250 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR050
+L power1:GND #PWR050
 U 1 1 578B8405
 P 6050 2150
 F 0 "#PWR050" H 6050 2250 30  0001 C CNN
@@ -115,7 +104,7 @@ F 3 "" H 6050 2150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 3V3 #PWR051
+L power1:3V3 #PWR051
 U 1 1 57EC9FE0
 P 1650 2350
 F 0 "#PWR051" H 1650 2450 40  0001 C CNN
@@ -126,7 +115,7 @@ F 3 "" H 1650 2350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 3V3 #PWR052
+L power1:3V3 #PWR052
 U 1 1 57ECA1FC
 P 1650 2450
 F 0 "#PWR052" H 1650 2550 40  0001 C CNN
@@ -137,7 +126,7 @@ F 3 "" H 1650 2450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 100nF_0805 C5
+L Capacitors_Smd0805:100nF_0805 C5
 U 1 1 57FFFF60
 P 4650 2200
 F 0 "C5" V 4550 2300 50  0000 L CNN
@@ -148,7 +137,7 @@ F 3 "" H 4650 2200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 100nF_0805 C4
+L Capacitors_Smd0805:100nF_0805 C4
 U 1 1 57FFFF8B
 P 2900 2200
 F 0 "C4" V 2800 2300 50  0000 L CNN
@@ -159,7 +148,7 @@ F 3 "" H 2900 2200 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR053
+L power1:GND #PWR053
 U 1 1 580000DE
 P 2600 2200
 F 0 "#PWR053" H 2600 2300 30  0001 C CNN
@@ -172,7 +161,7 @@ $EndComp
 Wire Wire Line
 	2700 2200 2600 2200
 $Comp
-L GND #PWR054
+L power1:GND #PWR054
 U 1 1 58000232
 P 4350 2200
 F 0 "#PWR054" H 4350 2300 30  0001 C CNN
@@ -185,7 +174,7 @@ $EndComp
 Wire Wire Line
 	4450 2200 4350 2200
 $Comp
-L 40pin_fpc_top_0_5mm P2
+L Fpc_Connectors:40pin_fpc_top_0_5mm P2
 U 1 1 59F3ACC9
 P 6400 4100
 F 0 "P2" H 6628 4201 60  0000 L CNN

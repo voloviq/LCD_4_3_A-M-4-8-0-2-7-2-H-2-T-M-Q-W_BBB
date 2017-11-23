@@ -1,4 +1,4 @@
-EESchema Schematic File Version 3
+EESchema Schematic File Version 4
 LIBS:Capacitors_Smd0805
 LIBS:Capacitors_Smd_Tantal
 LIBS:Fpc_Connectors
@@ -141,8 +141,6 @@ Text GLabel 7750 4050 0    39   Output ~ 0
 TSC_BUSY
 Text GLabel 7700 4150 0    39   Input ~ 0
 TSC_~INT
-Text GLabel 7700 850  0    39   Output ~ 0
-TSC_~RST
 Text GLabel 7700 1950 0    50   Output ~ 0
 TSC_DI
 Entry Bus Bus
@@ -337,20 +335,6 @@ Text HLabel 5200 4150 0    50   Output ~ 0
 LCD_DB22_R6
 Text HLabel 5200 4250 0    50   Output ~ 0
 LCD_DB23_R7
-Text HLabel 5200 4450 0    50   Output ~ 0
-LCD_SDI
-Text HLabel 5200 4550 0    50   Output ~ 0
-LCD_SCL
-Text HLabel 5200 4650 0    50   Output ~ 0
-LCD_CS
-Text HLabel 5200 4750 0    50   Output ~ 0
-LCD_RESET
-$Sheet
-S 4150 1600 1050 4550
-U 578A9842
-F0 "LCD" 60
-F1 "LCD.sch" 60
-$EndSheet
 Text HLabel 5200 5000 0    50   Output ~ 0
 LCD_DCLK
 Text HLabel 5200 5100 0    50   Output ~ 0
@@ -534,8 +518,6 @@ Text GLabel 8000 2150 0    50   Input ~ 0
 TSC_RES_ADC3
 Text GLabel 7750 1850 0    39   Input ~ 0
 TSC_DOUT
-Text HLabel 5200 4350 0    50   Output ~ 0
-LCD_SDO
 Entry Bus Bus
 	5250 4350 5350 4250
 Text HLabel 3150 5800 0    50   Output ~ 0
@@ -574,12 +556,10 @@ Entry Bus Bus
 	7250 4050 7350 4150
 Entry Bus Bus
 	7250 3950 7350 4050
-Entry Bus Bus
-	7250 750  7350 850 
 NoConn ~ 9250 1050
 NoConn ~ 9250 1150
 Wire Bus Line
-	7250 1350 7250 6050
+	7250 600  7250 6050
 Wire Bus Line
 	5350 1350 5350 5850
 Wire Bus Line
@@ -801,8 +781,6 @@ Wire Wire Line
 Wire Wire Line
 	9250 1750 7700 1750
 Wire Wire Line
-	9250 850  7700 850 
-Wire Wire Line
 	8150 3850 9250 3850
 Wire Wire Line
 	8250 3950 9250 3950
@@ -926,8 +904,6 @@ Wire Bus Line
 	7350 4150 7430 4150
 Wire Bus Line
 	7250 1350 5350 1350
-Wire Bus Line
-	7350 850  7415 850 
 Wire Wire Line
 	9250 4950 9150 4950
 Wire Bus Line
@@ -971,11 +947,16 @@ Wire Bus Line
 	3200 800  3100 800 
 Wire Bus Line
 	3200 900  3100 900 
-Wire Bus Line
-	3300 600  7250 600 
-Wire Bus Line
-	7250 600  7250 750 
 NoConn ~ 9250 5650
 NoConn ~ 9250 4850
 NoConn ~ 9250 4750
+NoConn ~ 9250 850 
+Wire Bus Line
+	3300 600  7250 600 
+$Sheet
+S 4150 1600 1050 4550
+U 578A9842
+F0 "LCD" 60
+F1 "LCD.sch" 60
+$EndSheet
 $EndSCHEMATC

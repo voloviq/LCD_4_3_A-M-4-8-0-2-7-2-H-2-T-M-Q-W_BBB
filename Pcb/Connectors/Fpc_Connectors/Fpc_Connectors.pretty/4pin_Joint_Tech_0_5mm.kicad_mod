@@ -1,5 +1,6 @@
-(module 4pin_Joint_Tech_0_5mm (layer F.Cu) (tedit 59F25B7E)
+(module 4pin_Joint_Tech_0_5mm (layer F.Cu) (tedit 59F8A36F)
   (tags FPC_Connector)
+  (attr smd)
   (fp_text reference REF** (at 0 -5.08) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

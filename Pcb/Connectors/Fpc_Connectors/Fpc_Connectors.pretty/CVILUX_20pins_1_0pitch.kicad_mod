@@ -1,6 +1,7 @@
-(module CVILUX_20pins_1_0pitch (layer F.Cu) (tedit 5803D56D)
+(module CVILUX_20pins_1_0pitch (layer F.Cu) (tedit 59F8A3F9)
   (descr 20pins_1_0pitch)
   (tags "Fpc Connector")
+  (attr smd)
   (fp_text reference 20pins_1_0pitch (at 0 -8.6) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

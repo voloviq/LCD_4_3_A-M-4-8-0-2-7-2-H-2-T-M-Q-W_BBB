@@ -1,15 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:Capacitors_Smd0805
-LIBS:Capacitors_Smd_Tantal
-LIBS:Fpc_Connectors
-LIBS:Switching_Regulators
-LIBS:Diodes
-LIBS:Inductors
-LIBS:power
-LIBS:Resistors_Smd0603
-LIBS:Resistors_Smd0805
-LIBS:Symbols
-LIBS:Touch_Sensors
+EESchema Schematic File Version 4
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END
@@ -26,7 +15,7 @@ Comment3 "Set 12.5[V] constant output voltage"
 Comment4 "All 0[Ohm] resistor is an option - do not use in normal power supply"
 $EndDescr
 $Comp
-L 2_2uF_10V_SMD_Tantal C1
+L Capacitors_Smd_Tantal:2_2uF_10V_SMD_Tantal C1
 U 1 1 578A98DF
 P 3900 3700
 F 0 "C1" H 4031 3696 50  0000 L CNN
@@ -37,7 +26,7 @@ F 3 "" H 3900 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 220pF_0805 CF1
+L Capacitors_Smd0805:220pF_0805 CF1
 U 1 1 578A992D
 P 5750 3750
 F 0 "CF1" V 5700 3850 50  0000 L CNN
@@ -48,7 +37,7 @@ F 3 "" H 5750 3750 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 10uH_CM322522 L1
+L Inductors:10uH_CM322522 L1
 U 1 1 578A9965
 P 4700 2800
 F 0 "L1" V 4916 2800 50  0000 C CNN
@@ -59,7 +48,7 @@ F 3 "" H 4700 2800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 51K_0805 R3
+L Resistors_Smd0805:51K_0805 R3
 U 1 1 578A9A11
 P 4850 4700
 F 0 "R3" H 4918 4746 50  0000 L CNN
@@ -70,7 +59,7 @@ F 3 "" H 4850 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 13k3_0603 R2
+L Resistors_Smd0603:13k3_0603 R2
 U 1 1 578A9A5B
 P 5450 4700
 F 0 "R2" H 5518 4746 50  0000 L CNN
@@ -88,7 +77,7 @@ Connection ~ 3900 3450
 Wire Wire Line
 	4850 4150 4850 4450
 $Comp
-L GND #PWR08
+L power1:GND #PWR08
 U 1 1 578AA0D3
 P 4550 4250
 F 0 "#PWR08" H 4550 4350 30  0001 C CNN
@@ -104,7 +93,7 @@ Connection ~ 4850 4350
 Wire Wire Line
 	4850 4950 4850 5050
 $Comp
-L GND #PWR09
+L power1:GND #PWR09
 U 1 1 578AA46D
 P 3900 4250
 F 0 "#PWR09" H 3900 4350 30  0001 C CNN
@@ -117,7 +106,7 @@ $EndComp
 Wire Wire Line
 	3900 3950 3900 4250
 $Comp
-L LM27313 U1
+L Switching_Regulators:LM27313 U1
 U 1 1 578AAA95
 P 4700 3500
 F 0 "U1" H 4700 4037 60  0000 C CNN
@@ -131,7 +120,7 @@ Wire Wire Line
 	6100 3550 6000 3550
 Connection ~ 6100 3300
 $Comp
-L MBR0520L D1
+L Diodes:MBR0520L D1
 U 1 1 578A99B5
 P 5750 3300
 F 0 "D1" H 5750 3493 40  0000 C CNN
@@ -147,7 +136,7 @@ Wire Wire Line
 	5450 3550 5450 4450
 Connection ~ 5450 3550
 $Comp
-L GND #PWR010
+L power1:GND #PWR010
 U 1 1 578AB087
 P 5450 5150
 F 0 "#PWR010" H 5450 5250 30  0001 C CNN
@@ -166,7 +155,7 @@ Wire Wire Line
 	6100 3750 5950 3750
 Connection ~ 6100 3550
 $Comp
-L GND #PWR011
+L power1:GND #PWR011
 U 1 1 578AB379
 P 6100 5150
 F 0 "#PWR011" H 6100 5250 30  0001 C CNN
@@ -195,7 +184,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 3450 4000 3450
 $Comp
-L 3V3 #PWR012
+L power1:3V3 #PWR012
 U 1 1 57E9AAD9
 P 2600 3450
 F 0 "#PWR012" H 2600 3550 40  0001 C CNN
@@ -206,7 +195,7 @@ F 3 "" H 2600 3450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 0R_0805 R5
+L Resistors_Smd0805:0R_0805 R5
 U 1 1 57E9ACB8
 P 4550 4700
 F 0 "R5" H 4400 4750 50  0000 C CNN
@@ -217,7 +206,7 @@ F 3 "" H 4550 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power1:GND #PWR013
 U 1 1 57E9AD53
 P 4550 5150
 F 0 "#PWR013" H 4550 5250 30  0001 C CNN
@@ -232,7 +221,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4350 4850 4350
 $Comp
-L GND #PWR014
+L power1:GND #PWR014
 U 1 1 57E9B3F0
 P 6900 3000
 F 0 "#PWR014" H 6900 3100 30  0001 C CNN
@@ -243,7 +232,7 @@ F 3 "" H 6900 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 3V3 #PWR015
+L power1:3V3 #PWR015
 U 1 1 57ECB801
 P 4850 5050
 F 0 "#PWR015" H 4850 5150 40  0001 C CNN
@@ -254,7 +243,7 @@ F 3 "" H 4850 5050 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 10uF_16V_SMD_Tantal C2
+L Capacitors_Smd_Tantal:10uF_16V_SMD_Tantal C2
 U 1 1 57EECEF5
 P 6100 4650
 F 0 "C2" H 6300 4650 50  0000 C CNN
@@ -265,7 +254,7 @@ F 3 "" H 6100 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0R_0805 R22
+L Resistors_Smd0805:0R_0805 R22
 U 1 1 59E857B6
 P 3200 4350
 F 0 "R22" V 3100 4350 50  0000 C CNN
@@ -280,7 +269,7 @@ LCD_PWM
 Wire Wire Line
 	2950 4350 1650 4350
 $Comp
-L 4pin_Joint_Tech_0_5mm P3
+L Fpc_Connectors:4pin_Joint_Tech_0_5mm P3
 U 1 1 59F3C6E8
 P 7250 3150
 F 0 "P3" H 7478 3251 60  0000 L CNN
@@ -295,7 +284,7 @@ Wire Wire Line
 NoConn ~ 7000 3100
 NoConn ~ 7000 3200
 $Comp
-L 240K_0805 R1
+L Resistors_Smd0805:240K_0805 R1
 U 1 1 59F4EE54
 P 5750 3550
 F 0 "R1" V 5650 3350 50  0000 C CNN

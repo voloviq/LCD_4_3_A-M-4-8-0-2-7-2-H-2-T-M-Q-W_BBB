@@ -1,6 +1,7 @@
-(module 50pin_WURTH_68715014022_0_5mm (layer F.Cu) (tedit 57EEB49B)
+(module 50pin_WURTH_68715014022_0_5mm (layer F.Cu) (tedit 59F8A3D7)
   (descr 50pin_WURTH_68715014022_0_5mm)
   (tags "Fpc Connector")
+  (attr smd)
   (fp_text reference WURTH_68715014022 (at 0 -3.4) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

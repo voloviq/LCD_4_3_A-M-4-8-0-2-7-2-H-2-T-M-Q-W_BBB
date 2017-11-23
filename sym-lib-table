@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name Capacitors_Smd0805)(type Legacy)(uri ${KIPRJMOD}/Schematic/Capacitors/Smd_0805/Capacitors_Smd0805.lib)(options "")(descr ""))
+  (lib (name Capacitors_Smd_Tantal)(type Legacy)(uri ${KIPRJMOD}/Schematic/Capacitors/Smd_Tantal/Capacitors_Smd_Tantal.lib)(options "")(descr ""))
+  (lib (name Fpc_Connectors)(type Legacy)(uri ${KIPRJMOD}/Schematic/Connectors/Fpc_Connectors/Fpc_Connectors.lib)(options "")(descr ""))
+  (lib (name Switching_Regulators)(type Legacy)(uri ${KIPRJMOD}/Schematic/Dc_Dc_Regulators/Switching/Switching_Regulators.lib)(options "")(descr ""))
+  (lib (name Diodes)(type Legacy)(uri ${KIPRJMOD}/Schematic/Diodes/Diodes.lib)(options "")(descr ""))
+  (lib (name Inductors)(type Legacy)(uri ${KIPRJMOD}/Schematic/Inductors/Inductors.lib)(options "")(descr ""))
+  (lib (name power1)(type Legacy)(uri ${KIPRJMOD}/Schematic/Power_Signs/power.lib)(options "")(descr ""))
+  (lib (name Resistors_Smd0603)(type Legacy)(uri ${KIPRJMOD}/Schematic/Resistors/Smd_0603/Resistors_Smd0603.lib)(options "")(descr ""))
+  (lib (name Resistors_Smd0805)(type Legacy)(uri ${KIPRJMOD}/Schematic/Resistors/Smd_0805/Resistors_Smd0805.lib)(options "")(descr ""))
+  (lib (name Symbols)(type Legacy)(uri ${KIPRJMOD}/Schematic/Symbols/Symbols.lib)(options "")(descr ""))
+  (lib (name Touch_Sensors)(type Legacy)(uri ${KIPRJMOD}/Schematic/Touch_Sensors/Touch_Sensors.lib)(options "")(descr ""))
+)

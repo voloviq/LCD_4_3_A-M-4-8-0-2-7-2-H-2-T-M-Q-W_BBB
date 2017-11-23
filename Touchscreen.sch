@@ -1,15 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:Capacitors_Smd0805
-LIBS:Capacitors_Smd_Tantal
-LIBS:Fpc_Connectors
-LIBS:Switching_Regulators
-LIBS:Diodes
-LIBS:Inductors
-LIBS:power
-LIBS:Resistors_Smd0603
-LIBS:Resistors_Smd0805
-LIBS:Symbols
-LIBS:Touch_Sensors
+EESchema Schematic File Version 4
 LIBS:TFT_LCD_4_3_AM480272H2T_V1_0-cache
 EELAYER 26 0
 EELAYER END
@@ -38,7 +27,7 @@ TSC_DCLK
 NoConn ~ 6600 4450
 NoConn ~ 5200 4500
 $Comp
-L GND #PWR017
+L power1:GND #PWR017
 U 1 1 57E98920
 P 4650 4200
 F 0 "#PWR017" H 4650 4300 30  0001 C CNN
@@ -49,7 +38,7 @@ F 3 "" H 4650 4200 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L 3V3 #PWR018
+L power1:3V3 #PWR018
 U 1 1 57E99C42
 P 4700 4350
 F 0 "#PWR018" H 4700 4450 40  0001 C CNN
@@ -60,7 +49,7 @@ F 3 "" H 4700 4350 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L 100nF_0805 C3
+L Capacitors_Smd0805:100nF_0805 C3
 U 1 1 57FFFAA4
 P 4800 3100
 F 0 "C3" H 4600 3200 50  0000 L CNN
@@ -71,7 +60,7 @@ F 3 "" H 4800 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L power1:GND #PWR021
 U 1 1 57FFFB78
 P 4800 2800
 F 0 "#PWR021" H 4800 2900 30  0001 C CNN
@@ -82,7 +71,7 @@ F 3 "" H 4800 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4pin_Cvilux_1_0mm P4
+L Fpc_Connectors:4pin_Cvilux_1_0mm P4
 U 1 1 59F3C4FD
 P 3000 3800
 F 0 "P4" H 3228 3901 60  0000 L CNN
@@ -93,7 +82,7 @@ F 3 "Connectors/Fpc_Connectors/Components_Documentation/ZIFFZC2xxCV.pdf.pdf" H 3
 	-1   0    0    1   
 $EndComp
 $Comp
-L XPT2046 U2
+L Touch_Sensors:XPT2046 U2
 U 1 1 59F479B2
 P 5900 3950
 F 0 "U2" H 5900 4765 50  0000 C CNN
@@ -104,7 +93,7 @@ F 3 "Touch_Sensors/Components_Documentation/XPT2046.pdf" H 5900 4350 60  0001 C 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 100nF_0805 C6
+L Capacitors_Smd0805:100nF_0805 C6
 U 1 1 59F4F1D1
 P 5100 3100
 F 0 "C6" H 4900 3200 50  0000 L CNN
@@ -115,7 +104,7 @@ F 3 "" H 5100 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L power1:GND #PWR016
 U 1 1 59F4F1D7
 P 5100 2800
 F 0 "#PWR016" H 5100 2900 30  0001 C CNN
@@ -138,7 +127,7 @@ Wire Wire Line
 Connection ~ 5100 3400
 Connection ~ 4800 3400
 $Comp
-L 3V3 #PWR019
+L power1:3V3 #PWR019
 U 1 1 59F4F3C1
 P 4700 3400
 F 0 "#PWR019" H 4700 3500 40  0001 C CNN
@@ -149,7 +138,7 @@ F 3 "" H 4700 3400 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L 3V3 #PWR020
+L power1:3V3 #PWR020
 U 1 1 59F4F403
 P 6900 4300
 F 0 "#PWR020" H 6900 4400 40  0001 C CNN
@@ -166,7 +155,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 4200 4650 4200
 $Comp
-L 47K_0805 R6
+L Resistors_Smd0805:47K_0805 R6
 U 1 1 59F4F4AF
 P 7200 4650
 F 0 "R6" H 7268 4749 50  0000 L CNN
@@ -181,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 4150 8850 4150
 $Comp
-L 3V3 #PWR022
+L power1:3V3 #PWR022
 U 1 1 59F4F59E
 P 7200 5000
 F 0 "#PWR022" H 7200 5100 40  0001 C CNN
@@ -235,7 +224,7 @@ YD
 Text Notes 3500 3650 0    60   ~ 0
 XR
 $Comp
-L 0R_0805 R8
+L Resistors_Smd0805:0R_0805 R8
 U 1 1 59F50AB8
 P 7100 2000
 F 0 "R8" V 6895 2000 50  0000 C CNN
@@ -246,7 +235,7 @@ F 3 "Resistors/Smd_0805/Components_Documentation/Vishay_Resistors_SM0805.pdf" V 
 	0    1    1    0   
 $EndComp
 $Comp
-L 0R_0805 R7
+L Resistors_Smd0805:0R_0805 R7
 U 1 1 59F50B9D
 P 7100 1700
 F 0 "R7" V 6895 1700 50  0000 C CNN
@@ -257,7 +246,7 @@ F 3 "Resistors/Smd_0805/Components_Documentation/Vishay_Resistors_SM0805.pdf" V 
 	0    1    1    0   
 $EndComp
 $Comp
-L 0R_0805 R10
+L Resistors_Smd0805:0R_0805 R10
 U 1 1 59F50C3C
 P 7100 2600
 F 0 "R10" V 6895 2600 50  0000 C CNN
@@ -268,7 +257,7 @@ F 3 "Resistors/Smd_0805/Components_Documentation/Vishay_Resistors_SM0805.pdf" V 
 	0    1    1    0   
 $EndComp
 $Comp
-L 0R_0805 R9
+L Resistors_Smd0805:0R_0805 R9
 U 1 1 59F50C42
 P 7100 2300
 F 0 "R9" V 6895 2300 50  0000 C CNN

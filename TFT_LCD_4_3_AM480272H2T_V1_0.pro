@@ -1,4 +1,4 @@
-update=sob, 28 paź 2017, 14:28:15
+update=pon, 20 lis 2017, 09:19:14
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,16 +37,4 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=Schematic
-[eeschema/libraries]
-LibName1=Schematic/Capacitors/Smd_0805/Capacitors_Smd0805
-LibName2=Schematic/Capacitors/Smd_Tantal/Capacitors_Smd_Tantal
-LibName3=Schematic/Connectors/Fpc_Connectors/Fpc_Connectors
-LibName4=Schematic/Dc_Dc_Regulators/Switching/Switching_Regulators
-LibName5=Schematic/Diodes/Diodes
-LibName6=Schematic/Inductors/Inductors
-LibName7=Schematic/Power_Signs/power
-LibName8=Schematic/Resistors/Smd_0603/Resistors_Smd0603
-LibName9=Schematic/Resistors/Smd_0805/Resistors_Smd0805
-LibName10=Schematic/Symbols/Symbols
-LibName11=Schematic/Touch_Sensors/Touch_Sensors
+LibDir=

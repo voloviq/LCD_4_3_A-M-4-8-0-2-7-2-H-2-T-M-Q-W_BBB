@@ -1,6 +1,7 @@
-(module Fpc_Connectors:NX1001-10SMS (layer F.Cu) (tedit 530236B9)
+(module NX1001-10SMS (layer F.Cu) (tedit 59F8A418)
   (descr NX1001-10SMS)
   (tags "SMT Connector")
+  (attr smd)
   (fp_text reference NX1001-10SMS (at 0 -2.3495) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

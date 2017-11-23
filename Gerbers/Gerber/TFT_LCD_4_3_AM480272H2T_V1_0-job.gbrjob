@@ -2,8 +2,8 @@ G04 Gerber job file with board parameters*
 %TF.FileFunction,JobInfo*%
 %TF.Part,SinglePCB*%
 G04 Single PCB fabrication instructions*
-%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-3ed106f~61~ubuntu16.04.1*%
-%TF.CreationDate,2017-10-29T09:33:10+01:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-fea9d12~61~ubuntu16.04.1*%
+%TF.CreationDate,2017-11-24T00:26:11+01:00*%
 %TF.ProjectId,TFT_LCD_4_3_AM480272H2T_V1_0,5446545F4C43445F345F335F414D3438,V1_0*%
 %MOMM*%
 G04 Overall board parameters*

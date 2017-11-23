@@ -1,6 +1,7 @@
-(module CF2033SF_10pins_0_5pitch (layer F.Cu) (tedit 57E2E10D)
+(module CF2033SF_10pins_0_5pitch (layer F.Cu) (tedit 59F8A3ED)
   (descr 10pins_0_5pitch)
   (tags "Fpc Connector")
+  (attr smd)
   (fp_text reference 10pins_05pitch (at 0 -4.2) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )

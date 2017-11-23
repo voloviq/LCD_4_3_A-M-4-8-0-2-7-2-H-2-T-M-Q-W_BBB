@@ -1,5 +1,6 @@
-(module 4pin_Cvilux_1_0mm (layer F.Cu) (tedit 59F106BF)
+(module 4pin_Cvilux_1_0mm (layer F.Cu) (tedit 59F8A360)
   (tags FPC_Connector)
+  (attr smd)
   (fp_text reference REF** (at 0 -6.35) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

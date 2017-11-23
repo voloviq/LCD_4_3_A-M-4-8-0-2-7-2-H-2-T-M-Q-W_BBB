@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-3ed106f~61~ubuntu16.04.1*%
-%TF.CreationDate,2017-10-29T09:33:10+01:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-fea9d12~61~ubuntu16.04.1*%
+%TF.CreationDate,2017-11-24T00:26:11+01:00*%
 %TF.ProjectId,TFT_LCD_4_3_AM480272H2T_V1_0,5446545F4C43445F345F335F414D3438,V1_0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW no-vcs-found-3ed106f~61~ubuntu16.04.1) date Sun Oct 29 09:33:10 2017*
+G04 Created by KiCad (PCBNEW no-vcs-found-fea9d12~61~ubuntu16.04.1) date Fri Nov 24 00:26:11 2017*
 %MOMM*%
 %LPD*%
 G01*
